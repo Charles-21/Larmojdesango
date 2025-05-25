@@ -1,0 +1,6 @@
+Se soluciona un sistema de ecuaciones independientes del tiempo que se conoce como solución estacionaria.
+El solucionador de la parte dinámica toma ese estado estacionario y aplica los operadores temporales
+
+Si a la solución estacionaria le añadimos la perturbación gaussiana, este nuevo sistema,
+ ¿también es solución de las ecuaciones independientes del tiempo? 
+Si sí, ¿tiene una nueva frecuencia¡
