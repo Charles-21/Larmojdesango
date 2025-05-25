@@ -1,6 +1,36 @@
+CUESTION #1:
+
 Se soluciona un sistema de ecuaciones independientes del tiempo que se conoce como solución estacionaria.
 El solucionador de la parte dinámica toma ese estado estacionario y aplica los operadores temporales
 
 Si a la solución estacionaria le añadimos la perturbación gaussiana, este nuevo sistema,
  ¿también es solución de las ecuaciones independientes del tiempo? 
 Si sí, ¿tiene una nueva frecuencia¡
+
+CUESTION #2:
+
+Una solución estacionaria tiene una masa dada por el último valor de la función de masa en la malla de r.
+Cuando aplicas una perturbación este valor se modifica.
+
+¿Hay que considerar estos dos valores en t=0 (Antes de perturbar) o en el siguiente punto de la malla temporal?
+
+Para 0.18 tenemos:
+
+6.11974499E-01
+6.11974624E-01
+
+Para 0.18 con una perturbación del 5% en la amplitud tenemos:
+
+6.12100095E-01 
+6.12100090E-01
+
+Para el primer punto de la malla:
+
+Hay una diferencia del 0.0205188662811758% en la masa
+
+Para el segundo punto de la malla
+
+Hay una diferencia del 0.0204976280921638% en la masa
+
+En cualquiera de los casos, el efecto de sumar la gaussiana al campo, modifica e valor de la masa. Los parámetros de la gaussiana están en función del porcentaje del cambio de masa deseado.
+
