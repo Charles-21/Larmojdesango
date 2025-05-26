@@ -1,0 +1,12 @@
+2	      ! evolveType, tipo de solucion: 1 -> estacionaria (solo c.i.); 2 -> Dinámica (evolución)
+1             ! matterType, tipo de materia: 1 -> KG; 2 -> Dirac; 3 -> Proca
+0.37	      ! campo0, parámetro inicial del campo de la estrella
+1.3794711235917008   ! w, ansatz para la frecuencia
+30            ! rmax, límite superior espacial
+500           ! tf, tiempo de integración final
+0.01          ! dr, tamaño de paso radial
+300           ! lineasT, cuántas líneas temporales se guardarán
+300           ! puntosR, cuántos puntos espaciales tendrán los datos guardados
+0.5           ! courant, parámetro de Courant
++0.05         ! delta, el tamaño de la amplitud de la perturbación
+0.1           ! deltaFWHM, el tamaño de la anchura de la perturbación

@@ -64,11 +64,11 @@ Rama 2: (0.37)
 Para esta, hoy quedó demostrado que con una perturbación positiva (que agrega masa), ocurre el colapso
 Hay que ver quihúbole si quitamos la masa
 
-Rama 3: ...
-
-
-
-
+Rama 3: ...(0.90)
+Soluciones de esta rama se dispersan pero ante una perturbación gaussiana parece que colapsan, es decir, migran a la otra parte de la rama inestable.
+Sí, probé con la solución 1.03 y tambien decae a la otra parte de la rama inestable.
+En efecto, eso ocurre incluso con perturbaciones menores al 5% de la amplitud
+Sí, parece que eso ha quedado confirmado con el último estado de Stationary.dat. Las de esta rama migran a la otra parte de la rama inestable
 
 
 
