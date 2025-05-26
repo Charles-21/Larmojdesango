@@ -1,0 +1,39 @@
+--------LUNES 25/MAYO/2025----------
+
+CUESTION #1: Perturbación y estado inicial
+
+Se soluciona un sistema de ecuaciones independientes del tiempo que se conoce como solución estacionaria.
+El solucionador de la parte dinámica toma ese estado estacionario y aplica los operadores temporales
+
+Si a la solución estacionaria le añadimos la perturbación gaussiana, este nuevo sistema,
+¿también es solución de las ecuaciones independientes del tiempo? 
+Si sí, ¿tiene una nueva frecuencia?
+
+CUESTION #2: Sobre la masa
+
+El código de evolución proporciona el valor de la masa antes y después de la perturbación.  Para la solución 0.37 perteneciente a la rama inestable, tenemos:
+
+m_i -->   0.61797753164164970
+m_p -->   0.61797753164164970  
+
+¡Pregunta! (en particular para Yisus) ¿De donde se extraen estos datos?
+¿Es el valor de la masa en t=0 (Antes de perturbar) o en el siguiente punto de la malla temporal?
+
+En cualquiera de los casos, el efecto de sumar la gaussiana al campo, modifica e valor de la masa. Los parámetros de la gaussiana están en función del porcentaje del cambio de masa deseado.
+
+---------MARTES 26/MAYO/2025--------------
+
+Perturbaciones gaussianas del 5%
+
+Rama 1: (0.08, estable) (tf= 200)
+
++: Estabilidad
+-: PENDIENTE 
+
+Rama 2: (0.37, inestable que colapsa) (tf= 200)
++: Colapso 
+-: PENDIENTE
+
+Rama 3: (0.90, 1.03, 1.09, inestables que se dispersan)  (tf= 200)
++: Colapso (migración hacia la otra parte de la rama inestable)
+-: PENDIENTE:
