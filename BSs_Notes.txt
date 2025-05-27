@@ -1,4 +1,4 @@
---------LUNES 25/MAYO/2025----------
+--------DOMINGO 25/MAYO/2025----------
 
 CUESTION #1: Perturbación y estado inicial
 
@@ -21,7 +21,7 @@ m_p -->   0.61797753164164970
 
 En cualquiera de los casos, el efecto de sumar la gaussiana al campo, modifica e valor de la masa. Los parámetros de la gaussiana están en función del porcentaje del cambio de masa deseado.
 
----------MARTES 26/MAYO/2025--------------
+---------LUNES 26/MAYO/2025--------------
 
 Perturbaciones gaussianas del 5%
 
@@ -38,7 +38,30 @@ Rama 3: (0.90, 1.03, 1.09, inestables que se dispersan)  (tf= 200)
 +: Colapso (migración hacia la otra parte de la rama inestable)
 -: PENDIENTE:
 
------------------------------------------------------------------------------------------------------------------------------------
+---------MARTES 26/MAYO/2025--------------
+
+CUESTION #3
+No puedo afirmar nada mediante un "En la gráfica se ve...", o sí? Visualizar una gráfica me permite concluir?
+
+Perturbaciones gaussianas del 5%:
+
+Rama 1: (0.08, estable) (tf= 500)
+
++: Estabilidad
+-: Estabilidad
+
+Rama 2: (0.29, 0.37, inestable que colapsa) (tf= 200)
+Falta verificar que por sí misma colapsa pero no quiero hacer una corrida tan larga en las compus del jale
++: Colapso 
+-: Oscilaciones
+
+Rama 3: (0.90, 1.03, 1.09, inestables que se dispersan)  (tf= 200)
++: Colapso (migración hacia la otra parte de la rama inestable)
+-: Nada
+
+
+
+----------------------------------------------------------------------------------------------------------------------------------
 Vídeos que me salen en el jale pero que no puedo compartir porque si no me tuercen
 
 https://www.youtube.com/watch?v=_YbGWoUaZg0
