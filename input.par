@@ -8,5 +8,5 @@
 300           ! lineasT, cuántas líneas temporales se guardarán
 300           ! puntosR, cuántos puntos espaciales tendrán los datos guardados
 0.5           ! courant, parámetro de Courant
-+0.05         ! delta, el tamaño de la amplitud de la perturbación
+-0.05         ! delta, el tamaño de la amplitud de la perturbación
 0.1           ! deltaFWHM, el tamaño de la anchura de la perturbación
