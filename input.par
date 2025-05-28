@@ -1,7 +1,7 @@
 2	      ! evolveType, tipo de solucion: 1 -> estacionaria (solo c.i.); 2 -> Dinámica (evolución)
 1             ! matterType, tipo de materia: 1 -> KG; 2 -> Dirac; 3 -> Proca
-1.09	      ! campo0, parámetro inicial del campo de la estrella
-5.4122940306602490	! w, ansatz para la frecuencia
+0.90	      ! campo0, parámetro inicial del campo de la estrella
+3.3556021416076530	! w, ansatz para la frecuencia
 25            ! rmax, límite superior espacial
 200           ! tf, tiempo de integración final
 0.01          ! dr, tamaño de paso radial
