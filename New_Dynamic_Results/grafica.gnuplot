@@ -1,8 +1,8 @@
-set title "masa.t en 0.29_0" font "Helvetica,14"
+set title "alpha.rt en 0.29_+5" font "Helvetica,14"
 set xlabel "t" font "Helvetica,12"
-set ylabel "masa.t" font "Helvetica,12"
+set ylabel "r" font "Helvetica,12"
+set zlabel "alpha.rt" font "Helvetica,12"
 set border lw 1.5
 set grid
-set style line 1 lt 1 lw 2 lc rgb "#0072BD"
-plot "0.29_0/masa.t" with lines linestyle 1
+splot "0.29_+5/alpha.rt" with lines
 pause -1 "Presiona enter para salir, hdlv"
