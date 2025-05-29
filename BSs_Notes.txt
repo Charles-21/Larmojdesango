@@ -38,7 +38,7 @@ Rama 3: (0.90, 1.03, 1.09, inestables que se dispersan)  (tf= 200)
 +: Colapso (migración hacia la otra parte de la rama inestable)
 -: PENDIENTE:
 
----------MARTES 26/MAYO/2025--------------
+---------MARTES 27/MAYO/2025--------------
 
 CUESTION #3
 No puedo afirmar nada mediante un "En la gráfica se ve...", o sí? Visualizar una gráfica me permite concluir?
@@ -58,6 +58,16 @@ Falta verificar que por sí misma colapsa pero no quiero hacer una corrida tan l
 Rama 3: (0.90, 1.03, 1.09, inestables que se dispersan)  (tf= 200)
 +: Colapso (migración hacia la otra parte de la rama inestable)
 -: Nada
+
+
+----------MIÉRCOLES 28/MAYO/2025------------------
+
+Hoy no pude hacer mucho porque me quedé sólo en el jale
+
+----------JUEVES 29/MAYO2025-------------------------
+El plan para hoy es hacer gráficas mamalonas 
+ 
+
 
 
 
