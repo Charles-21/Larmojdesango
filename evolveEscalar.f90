@@ -19,7 +19,9 @@ subroutine evolveEscalar
 
    real(8) dtw, dif
    real(8) Srr_p, Srr
-
+	
+   real(8) alpha0	
+   
    !------------------------------------------------
    ! Alojamos en memoria los arreglos.
    allocate( phi(Nr), vphi(Nr) )
@@ -60,6 +62,9 @@ subroutine evolveEscalar
          psi1(j) = (phi1(j+1) - phi1(j-1))*medio/dr
       end do
 
+	alpha0 = 1/(a(Nr)*alpha(Nr))
+	pi2 = -(w*alpha0)*phi1*( a/alpha )
+	
       call metricEscalar
    end if
    write(*,*) 'm_p --> ', (rmax/dos)*( uno - (uno/a(Nr)**2) )

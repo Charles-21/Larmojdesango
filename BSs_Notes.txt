@@ -9,6 +9,8 @@ Si a la solución estacionaria le añadimos la perturbación gaussiana, este nue
 ¿también es solución de las ecuaciones independientes del tiempo? 
 Si sí, ¿tiene una nueva frecuencia?
 
+La solución perturbada debe tener la misma frecuencia pero satisfacer las mismas constricciones. 
+
 CUESTION #2: Sobre la masa
 
 El código de evolución proporciona el valor de la masa antes y después de la perturbación.  Para la solución 0.37 perteneciente a la rama inestable, tenemos:
@@ -72,7 +74,7 @@ He elegido utilizar matplotlib
 
 En cuando a la solución estable: 
 Recuerda la cánica.
-
+REcuerda lo discutido sobre la naturaleza de la perturbación
 
 ----------------------------------------------------------------------------------------------------------------------------------
 Vídeos que me salen en el jale pero que no puedo compartir porque si no me tuercen
