@@ -68,6 +68,9 @@ Hoy no pude hacer mucho porque me quedé sólo en el jale
 El plan para hoy es hacer gráficas mamalonas 
 He elegido utilizar matplotlib 
 
+----------VIERNES 30/MAYO/2025------------------
+
+Acabo de clonar el repositorio en mi compu personal. Vamos a ver cómo funciona esta onda del guitjob
 
 
 
