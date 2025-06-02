@@ -32,10 +32,12 @@ Hemos elegido no hacerlo.
 
 Perturbaciones gaussianas del 5%:
 
-Rama 1: (0.08, estable) (tf= 500)
-0:
+Rama 1: ()
+
+0: Estabilidad
 +: 
 -: 
+
 
 Rama 2: (0.29, 0.37, inestable que colapsa) (tf= 200)
 0:
@@ -47,7 +49,12 @@ Rama 3: (0.90, 1.03, 1.09, inestables que se dispersan)  (tf= 200)
 +: 
 -: 
 
+La solución 0.21 se supone que es de la rama estable, pero al haberle aplicado perturbaciones, colapsa. El máximo de la masa no separa las ramas pero hay que estar chitones con eso.
+0.17 también colapsa!
 ----------LUNES 02/JUNIO/2025-----------------
+Hoy encontré que el verdadero máximo de la masa está entre 0.10 y 0.11
+
+
 ----------MARTES 03/JUNIO/2025----------------
 ----------MIÉRCOLES 04/JUNIO/2025-------------
 ----------JUEVES 05/JUNIO/2025----------------
