@@ -29,6 +29,11 @@ subroutine evolveEscalar
 
    real(8) :: Q
 
+   real(8) :: masuda(Nr)
+
+   real(8) :: darkness, Masa99, Radio99, Compacticidad
+
+   integer  idx
    !------------------------------------------------
    ! Alojamos en memoria los arreglos.
    allocate( phi(Nr), vphi(Nr) )
@@ -75,6 +80,34 @@ subroutine evolveEscalar
       Q = Q + 0.5d0 * (j0(j+1) + j0(j)) * (r(j+1) - r(j))
    end do
    write(*,*) 'Q --> ', Q
+
+   ! Función local de masa
+
+   do j = 1, Nr
+      masuda(j) = (r(j)/dos)*( uno - (uno/(a(j)**2)) )
+   end do
+
+   ! 99% de la masuda
+   darkness = 0.99d0 * masuda(Nr)
+
+   idx = Nr
+
+   do j = 1, Nr
+      if (masuda(j) >= darkness) then
+              idx = j
+              exit
+      end if
+   end do
+
+   ! Masa 99, Radio 99 y Compacticidad
+
+   Masa99        = masuda(idx)
+   Radio99       = r(idx)
+   Compacticidad = Masa99 / Radio99
+
+   write(*,*) 'Masa99        = ', Masa99
+   write(*,*) 'Radio99       = ', Radio99
+   write(*,*) 'Compacticidad = ', Compacticidad
 
 
 
