@@ -20,8 +20,15 @@ subroutine evolveEscalar
    real(8) dtw, dif
    real(8) Srr_p, Srr
 	
-   real(8) alpha0	
-   
+   real(8) alpha0
+
+   real(8) :: mi, mp
+
+   real(8), parameter :: pi = 3.141592653589793d0
+   real(8) :: j0(Nr)
+
+   real(8) :: Q
+
    !------------------------------------------------
    ! Alojamos en memoria los arreglos.
    allocate( phi(Nr), vphi(Nr) )
@@ -50,10 +57,33 @@ subroutine evolveEscalar
    end if
 
    !------------------------------------------------
-   ! Calculamos la perturbación y calculamos el valor de las funciones métricas ya perturbadas.
-   write(*,*) '--------'
-   write(*,*) 'm_i --> ', (rmax/dos)*( uno - (uno/a(Nr)**2) )
+   ! Parámetros previos a la perturbación
+   write(*,*) '--------------------------------'
 
+   ! Masa ADM
+   mi = (rmax/dos)*( uno - (uno/a(Nr)**2) )
+   write(*,*) 'm_i --> ', mi
+
+   ! Tratando de llamar a la omega chida
+   write(*,*) 'wt --> ', wt  
+
+   ! Corriente de Noether
+   do j = 1, Nr
+      j0(j) = 8.0d0 * pi * r(j)**2 * phi1(j)**2 * a(j) / alpha(j)
+   end do
+
+   ! Carga conservada
+   Q = 0.0d0
+   do j = 1, Nr-1
+      Q = Q + 0.5d0 * (j0(j+1) + j0(j)) * (r(j+1) - r(j))
+   end do
+   write(*,*) 'Q --> ', Q
+
+
+
+   !------------------------------------------------
+   ! Aplicando la perturbación
+   write(*,*) '--------------------------------'
    if ( delta /= 0 ) then
       call perturbacionEscalar
       phi1 = phi1 + deltaEscalar
@@ -65,9 +95,15 @@ subroutine evolveEscalar
 	alpha0 = 1/(a(Nr)*alpha(Nr))
 	pi2 = -(w*alpha0)*phi1*( a/alpha )
 	
-      call metricEscalar
+      call metricEscalar ! Recalculando la métrica
    end if
-   write(*,*) 'm_p --> ', (rmax/dos)*( uno - (uno/a(Nr)**2) )
+
+   ! Masa ADM perturbada
+   mp = (rmax/dos)*( uno - (uno/a(Nr)**2) )
+   write(*,*) 'm_p --> ', mp
+
+   ! Diferencia porcentual del cambio de masa
+   write(*,*) 'Δ% masa = ', 100.0d0 * (mp - mi) / mi
 
    !------------------------------------------------
    ! Imprimimos información inicial a pantalla.
@@ -234,3 +270,4 @@ subroutine evolveEscalar
    close(24)
 
 end subroutine
+

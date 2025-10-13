@@ -28,6 +28,8 @@ module vars
    character(len=10) char_campoEntero, char_campoDecimal
    integer campoEntero
 
+   real(8) wt
+
 contains
 
    subroutine lector
