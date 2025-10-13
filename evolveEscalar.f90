@@ -64,12 +64,9 @@ subroutine evolveEscalar
    mi = (rmax/dos)*( uno - (uno/a(Nr)**2) )
    write(*,*) 'm_i --> ', mi
 
-   ! Tratando de llamar a la omega chida
-   write(*,*) 'wt --> ', wt  
-
    ! Corriente de Noether
    do j = 1, Nr
-      j0(j) = 8.0d0 * pi * r(j)**2 * phi1(j)**2 * a(j) / alpha(j)
+      j0(j) = wt * r(j)**2 * phi1(j)**2 * a(j) / alpha(j)
    end do
 
    ! Carga conservada
