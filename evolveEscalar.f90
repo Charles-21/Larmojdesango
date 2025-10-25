@@ -105,8 +105,8 @@ subroutine evolveEscalar
    Radio99       = r(idx)
    Compacticidad = Masa99 / Radio99
 
-   write(*,*) 'Masa99        = ', Masa99
-   write(*,*) 'Radio99       = ', Radio99
+   !write(*,*) 'Masa99        = ', Masa99
+   !write(*,*) 'Radio99       = ', Radio99
    write(*,*) 'Compacticidad = ', Compacticidad
 
 

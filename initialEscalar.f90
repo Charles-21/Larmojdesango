@@ -31,8 +31,8 @@ subroutine initialEscalar
 
    !------------------------------------------------
    ! Imprimimos variables de interés.
-   write(*,*) 'rf  --> ', rmax 
-   write(*,*) 'f0  --> ', campo0
+   write(*,*) 'rf  --> ', int(rmax) 
+   write(*,'(A,F6.2)') 'f0  --> ', campo0
    write(*,*) 'w   --> ', w
 
    wt = w*alpha0
